@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+  <parameter name="Local Demo Setting"
+             description="A local setting"
+             defaultValue="LOCAL">
+    <parameterEntry kind="XmlFile" scope="Web.config"
+                    match="/configuration/appSettings
+                           /add[@key='Demo.MySetting']
+                           /@value" />
+  </parameter>
+</parameters>
